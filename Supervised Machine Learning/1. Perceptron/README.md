@@ -16,4 +16,6 @@ $$
  b \gets b - \frac{1}{2} (\hat{y}_i - y_i)
 $$
 
-In the following notebook, we will create a Perceptron class that will perform binary classification of roller coasters into Wooden or Steel roller coasters based on their max height, top speed, and number of inversions.
+The idea here is that if $$\hat{y}_i$$ equals $$y_i$$, then we do not change our weights. 
+
+In the following notebook, we will create a Perceptron class that will perform binary classification of board games into those can be finished in an hour vs. those who cannot based on its average complexity level and rating.
