@@ -8,9 +8,9 @@ The elbow method is a common method to see which k value is most optimal. By plo
 
 What does "closest" mean? This idea of "closest" usually refers to L2 **Euclidean** distance but other forms of distance can be used. We will explore both Euclidean distance and Manhattan distance when applying this algorithm.
 
+In this following notebook, we will use the speed, height, and number of inversions on a roller coaster to predict the minimum height requirement in order to ride the roller coaster.
+
 
 -- Notes from Class:
 -- Curse of dimensionality, high dimensional space is essentially empty, each feature vector is mapped to the majority label of the training instances, have to store all of those instances, memory issues
 -- Test set should not be used to pick k. Instead, we should create a separate validation set. Test set should never influence any parameters of the model.
-
-
