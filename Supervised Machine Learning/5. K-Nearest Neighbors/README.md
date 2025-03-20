@@ -8,7 +8,7 @@ The elbow method is a common method to see which k value is most optimal. By plo
 
 What does "closest" mean? This idea of "closest" usually refers to L2 **Euclidean** distance but other forms of distance can be used. We will explore both Euclidean distance and Manhattan distance when applying this algorithm.
 
-In this following notebook, we will use the speed, height, and number of inversions on a roller coaster to predict the minimum height requirement in order to ride the roller coaster.
+In this following notebook, we will use the speed and height of a roller coaster to predict whether a roller coaster has inversions or not. We will first use L2 Euclidean distance but we will also try Manhattan distance and compare our results.
 
 
 -- Notes from Class:
