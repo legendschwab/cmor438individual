@@ -4,6 +4,10 @@ There are 2 goals with clustering algorithms:
 1. Intragroup Similarity: Elements within each cluster should be as similar to each other as possible
 2. Intergroup Differences: Elements from different clusters should be as different from each other as possible
 
+![kmeans](https://miro.medium.com/v2/resize:fit:1080/0*irrlUXS1tmYanvT0.png)
+
+*Graph for K-Means Clustering (Credits: Medium)*
+
 This algorithm begins by randomly assigning k data points as our centroid values to represent the initial clusters. Then, all the training data points are classified into one of the k clusters based on closest distance. Similar to kNN, we can use various forms of distance but the most common is Euclidean distance. Afterwards, the centroid values are updated by averaging the values of all the points in the cluster. This iterative process is repeated until the amount that the centroids change is within a small tolerance. This means the algorithm has converged. 
 
 How do you determine the value of $$k$$? 
@@ -14,5 +18,5 @@ The elbow method is a common method to see which $$k$$ value is most optimal. We
 
 *Elbow Method for K-Means Clustering (Credits: Towards Data Science)*
 
-In the following notebook, we will apply K-Means Clustering to the coordinate location of roller coasters in the United States. 
+In the following notebook, we will apply K-Means Clustering to the coordinate location of roller coasters in the United States.
 

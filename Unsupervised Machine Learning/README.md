@@ -1,13 +1,7 @@
-Supervised Machine Learning is a class of machine learning where we work with labelled data to predict outcomes and discern relationships. 
+Unsupervised Machine Learning is a class of machine learning where we work with data that is unlabelled. These algorithms can detect relationships based on the existing features of the data. The most common type of unsupervised machine learning is clustering of data points. This is similar to classification algorithms in supervised machine learning. However, in this case, the categories are discovered through the clustering algorithm and not pre-determined. 
 
-Within supervised machine learning, there are two types: regression and classification. Regression focuses on predicting an output value given inputs. These values usually take on a continuous range. However, classification focuses on assigning categorical values given inputs. In supervised machine learning algorithms, our data points are pre-labelled with these categories.
-
-Examples Include: 
-1. Perceptron
-2. Linear Regression
-3. Logistic Regression
-4. Neural Networks
-5. K-Nearest Neighbors
-6. Decision Trees / Regression Trees
-7. Random Forests
-8. Ensemble Methods Such As Boosting
+Examples Include:
+1. K-Means Clustering
+2. DBSCAN
+3. Principal Component Analysis
+4. Image Compression with SVD Decomposition
