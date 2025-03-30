@@ -2,7 +2,13 @@ Decision trees are machine learning algorithms that can help with both classific
 
 ## Classification
 
-For classification,  we create a tree that has either root nodes or leaf nodes. At root nodes, we separate our data into 2 groups based on a feature condition. For example, for a roller coaster classification example, all roller coasters with a height less than 100 feet goes to the left child node while those higher than 100 feet go to the right child node. We look at the 2 child nodes. If all the data in a node is in the same category, that node is a leaf node and no more splitting is required. Otherwise, we have a root node and need to separate our data once again via another condition.
+For classification,  we create a tree that has either root nodes or leaf nodes. At root nodes, we separate our data into 2 groups based on a feature condition. 
+
+![classificationexample](https://images.datacamp.com/image/upload/v1677504957/decision_tree_for_heart_attack_prevention_2140bd762d.png)
+
+*Credits: Data Camp*
+
+For example, for the above heart attack risk classification example, age is used to split the data into 3 child nodes. Then, we look at the child nodes. If all the data in a node is in the same category, that node is a leaf node and no more splitting is required. This would correspond to the Age 18-30 node. Otherwise, we have a root node and need to separate our data once again via another condition.
 
 How do we decide what conditions go on our leaf nodes? The model chooses conditions that create splits that maximize the information gain. We measure the amount of information in a state via entropy. 
 
@@ -42,5 +48,7 @@ where:
 - $$Var(\text{parent})$$ is the variance of the output values in the parent node.
 - $$Var(\text{child}_i)$$ is the variance of the output values in the $$i$$-th child node.
 - $$w_i$$ is the weight of each child node, given by the proportion of samples in that child.
+
+We get to a leaf node once we've reached a maximum depth to the tree, the minimum number of samples per node is reached, or when variance reduction is within a negligible threshold. Note that maximum depth and minimum number of samples are parameters that can be fine tuned using validation. 
 
 Once we've trained our model, we can make a prediction using our testing data. To make a prediction, we follow the path of parent and child nodes, splitting the data based on the conditions, until we reach a leaf node. Then, to make the prediction, we take the **average** of the output values of the training data points that belong to that node. 
