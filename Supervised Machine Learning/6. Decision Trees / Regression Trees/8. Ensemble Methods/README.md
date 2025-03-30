@@ -28,3 +28,19 @@ where:
 - $$H(\text{parent})$$ is the entropy of the parent node.
 - $$H(\text{child}_i)$$ is the entropy of the $$i$$-th child node.
 - $$w_i$$ is the weight of each child node, given by the proportion of samples in that child.
+
+## Regression
+
+For regression, each data point has features mapped to a continuous output value as opposed to a category. Given feature values, our goal is to predict the output value. Using decision trees for regression is very similar to classification. We have parent and child nodes that allow us to continuously split our data until we reach leaf nodes. 
+
+Using our training data, we determine the conditions that split are data at each node by calculating variance reduction. Our goal is maximize the amount of variance, a measure of uncertainty, that is reduced with each split. The concept of variance is comparable to entropy in the classification model. Mathematically, variance reduction is defined as:
+
+$$ VR = Var(\text{parent}) - \sum_{i} w_i Var(\text{child}_i)$$
+
+where:
+
+- $$Var(\text{parent})$$ is the variance of the output values in the parent node.
+- $$Var(\text{child}_i)$$ is the variance of the output values in the $$i$$-th child node.
+- $$w_i$$ is the weight of each child node, given by the proportion of samples in that child.
+
+Once we've trained our model, we can make a prediction using our testing data. To make a prediction, we follow the path of parent and child nodes, splitting the data based on the conditions, until we reach a leaf node. Then, to make the prediction, we take the **average** of the output values of the training data points that belong to that node. 
