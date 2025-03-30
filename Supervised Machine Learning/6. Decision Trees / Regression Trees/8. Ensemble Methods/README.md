@@ -1,4 +1,4 @@
-**Decision trees** are machine learning algorithms that can help with both classification and regression. They have a tree-like structure and parent and child nodes. 
+**Decision trees** are machine learning algorithms that can help with both classification and regression. They have a tree-like structure with parent and child nodes. 
 
 ## Classification
 
@@ -52,3 +52,7 @@ where:
 We get to a leaf node once we've reached a maximum depth to the tree, the minimum number of samples per node is reached, or when variance reduction is within a negligible threshold. Note that maximum depth and minimum number of samples are parameters that can be fine tuned using validation. 
 
 Once we've trained our model, we can make a prediction using our testing data. To make a prediction, we follow the path of parent and child nodes, splitting the data based on the conditions, until we reach a leaf node. Then, to make the prediction, we take the **average** of the output values of the training data points that belong to that node. 
+
+## Random Forests
+
+Random forests are
