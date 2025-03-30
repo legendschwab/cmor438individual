@@ -13,7 +13,7 @@ is a good sample size.
 
 Once we have created several samples of our training data, we randomly choose a subset of features for each sample. By doing a random feature selection, we
 balance out the selection of "useful" and "un-useful" features. If we used all the features for every sample, each sample will have decision trees to 
-behave extremeley similarly. We want to best balance out the extremeties in our data, so we want varied decision trees to get more accurate results.
+behave extremely similarly. We want to best balance out the extremeties in our data, so we want varied decision trees to get more accurate results.
 
 ## Aggregation
 
