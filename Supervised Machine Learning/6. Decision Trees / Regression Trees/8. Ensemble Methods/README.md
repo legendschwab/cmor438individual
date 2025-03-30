@@ -1,4 +1,4 @@
-Decision trees are machine learning algorithms that can help with both classification and regression. They have a tree-like structure and parent and child nodes. 
+**Decision trees** are machine learning algorithms that can help with both classification and regression. They have a tree-like structure and parent and child nodes. 
 
 ## Classification
 
