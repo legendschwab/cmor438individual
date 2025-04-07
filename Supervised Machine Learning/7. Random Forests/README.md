@@ -1,4 +1,4 @@
-**Random Forests** build upon decision trees by aggregating the results of multiple smaller decision trees into one. This is why we call this model a forest.
+**Random Forests** build upon decision trees by aggregating the results of multiple smaller decision trees into one. This is why we call this model a random forest.
 
 Why do we have use random forest? In normal decision trees, the model is pretty sensitive to training data points, especially outliers. Since data points can dramatically
 affect the various splits. By combining the results of mutliple smaller trees, we balance out the extreme values and get more accurate results.
