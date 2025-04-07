@@ -2,7 +2,7 @@
 
 Random forests is as an example of an ensemble method as it combines the prediction of multiple smaller decision trees in a random fashion to get more consistent predictions. 
 
-![Bagging]("https://miro.medium.com/v2/resize:fit:1200/0*fdDu8RbNLoUzrrlF.jpeg")
+![Bagging](https://miro.medium.com/v2/resize:fit:1200/0*fdDu8RbNLoUzrrlF.jpeg)
 
 *Credits: Plural Sight*
 
