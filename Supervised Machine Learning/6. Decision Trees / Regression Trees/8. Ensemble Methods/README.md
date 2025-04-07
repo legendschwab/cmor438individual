@@ -53,6 +53,4 @@ We get to a leaf node once we've reached a maximum depth to the tree, the minimu
 
 Once we've trained our model, we can make a prediction using our testing data. To make a prediction, we follow the path of parent and child nodes, splitting the data based on the conditions, until we reach a leaf node. Then, to make the prediction, we take the **average** of the output values of the training data points that belong to that node. 
 
-## Random Forests
-
-Random forests are
+In the following notebook, we will revist the idea introduced in K-Nearest Neighbors to figure out how to classify roller coasters as those with inversions and those without. In this case, we will use height, speed, and G-Force as our features.
