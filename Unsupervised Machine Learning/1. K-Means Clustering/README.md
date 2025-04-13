@@ -16,7 +16,7 @@ The elbow method is a common method to see which $$k$$ value is most optimal. We
 
 However, I also want to explore another method for evaluating the success of our clustering algorithm.
 
-There should be 2 goals with clustering algorithms:
+The intuition is that there are 2 goals with clustering algorithms:
 1. Intragroup Similarity: Elements within each cluster should be as similar to each other as possible
 2. Intergroup Differences: Elements from different clusters should be as different from each other as possible
 
@@ -24,32 +24,20 @@ Thus, I'll define a new metric called clustering distinctness (CD) that is compu
 
 Let:
 
-- \( \mathbf{x}_i \) be a data point.
-- \( C_j \) be the centroid of the cluster that \( \mathbf{x}_i \) belongs to.
-- \( \mathcal{C} \) be the set of all centroids.
-- \( d(\mathbf{x}_i, C) \) be the distance between point \( \mathbf{x}_i \) and centroid \( C \).
-- \( \bar{d}_{\text{other}}(\mathbf{x}_i) \) be the average distance from \( \mathbf{x}_i \) to all centroids **excluding** \( C_j \).
+- ${x_i}$ be a data point.
+- $c_j$ be the centroid of the cluster that ${x_i}$ belongs to.
+- $\mathcal{C}$ be the set of all centroids.
+- $d(\mathbf{x}_i, c)$ be the distance between point ${x}_i$ and centroid $C$.
 
 Then the **Cluster Distinctiveness** for the entire dataset is:
 
-\[
-\text{Distinctiveness} = \sum_{i=1}^{n} \left( \frac{1}{k - 1} \sum_{\substack{C \in \mathcal{C} \\ C \ne C_j}} d(\mathbf{x}_i, C) - d(\mathbf{x}_i, C_j) \right)
-\]
+$$
+\text{Distinctiveness} = \sum_{i=1}^{n} \left( \frac{1}{k - 1} \sum_{\substack{c \in \mathcal{C}, \\ c \ne c_j}} d(\mathbf{x}_i, c) - d(\mathbf{x}_i, c_j) \right)
+$$
 
-In the following notebook, we will apply K-Means Clustering to the coordinate location of roller coasters in the United States.
+In words, this measures the average distance from each point to centroids for the clusters it does not belong to and subtracts the distance from the point to its own cluster centroid. Thus, with high intragroup similarity, the points will have small distance to its own centroid. With high intergroup difference, the points should be far apart from other clusters. This metric combines these two together.
 
-
-
-1. pick k centroids
-2. assign each point to the nearest cenroid; that is its label (euclidean distance only does balls of data, manhattan distance does boxes)
-3. For each group assign a new centroid to the average
-
-how to determine k?
-take a distance measure from each point to each centroid and sum up for each point and divide by the number of points in that cluster, sum up these averages across 
+In the following notebook, we will apply K-Means Clustering to the coordinate location of roller coasters in the United States to help us plan which cluster of roller coasters we should visit next.
 
 Come up with and try different measures for K.
 - standard deviation, variance
-
-Maybe a metric: each point you take the sum of distances to the centroids of other clusters and then subtract out the distance to the centroid of the cluster the point belongs in, divide this sum by k and then average across all points
-
-want points to be far from other cluster centroids but close to their own cluster centroid
