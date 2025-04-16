@@ -5,7 +5,7 @@ y_i = \beta_{0} + \beta_{1} x_{i1} + \cdots + \beta_{p} x_{ip} + \varepsilon_i
 = \mathbf{x}^\mathsf{T}_i\boldsymbol\beta + \varepsilon_i, \quad i = 1, \ldots, n
 $$
 
-where $$x_{i}$$'s are our input feature values and $$y_{i}$$ are the corresponding output values that we are trying to predict. In linear regression, we make a couple assumptions. Here, we assume that $\varepsilon_i$ are independent and identically distributed (i.i.d.) normal variables. Looking at the plot of $$x_{i}$$ against residual errors allows us to check this assumption.
+where $$x_{i}$$'s are our input feature values and $$y_{i}$$ are the corresponding output values that we are trying to predict. In linear regression, we make a couple assumptions. Here, we assume that $\varepsilon_i$ are independent and identically distributed (i.i.d.) normal variables. Looking at the plot of $$x_{i}$$ against residual errors allows us to check this assumption. Linear regression is essentially the simple perceptron model without the activation function.
 
 Using the training data $$(\overrightarrow{x}_i, y_i)$$ linear regression seeks to estimate the coefficients ($$\beta$$'s) that minimize the least squares error, which is the sum of squared errors between observed data points and the predicted values.
 
