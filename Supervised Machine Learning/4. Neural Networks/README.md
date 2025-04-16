@@ -11,8 +11,6 @@ We have a set of weights for each layer to the next, which is represented by a w
 $a^{l} = \sigma\left(W^{l} a^{l-1} + b^{l}\right) \text{for } l = 1, 2, \dots, L$ 
 where $\sigma$ gives the activation function.
 
-We use a training process called **back propagation** to solve for the optimal weights and biases at each layer. It is essentially a multi-layer algorithm similar to the iterative process for perceptron. The general intuition is to calculate the error at each layer and propagate it backwards to update the weights/bias at each layer. The updating scheme is based on the **gradient descent** algorithm, where we calculate the gradient of the cost function at each layer to find the direction of steepest descent. This allows us to minimize error at each layer.
+We use a training process called **back propagation** to solve for the optimal weights and biases at each layer. It is essentially a multi-layer algorithm similar to the iterative process for the perceptron model. The general intuition is to calculate the error at each layer and propagate it backwards to update the weights/bias at each layer. The updating scheme is based on the **gradient descent** algorithm, where we calculate the gradient of the cost function at each layer to find the direction of steepest descent. This allows us to minimize error at each layer.
 
-
-
-
+Neural Networks is a very powerful machine learning algorithm as it can model more complex situations. However, it can be prone to overfitting and computationally taxing to implement. In the following notebook, we will apply Neural Networks to classify board games (once again) as games that take a long time and those that do not take a long time. 
