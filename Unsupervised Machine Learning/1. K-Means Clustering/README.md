@@ -38,6 +38,3 @@ $$
 In words, this measures the average distance from each point to centroids for the clusters it does not belong to and subtracts the distance from the point to its own cluster centroid. Thus, with high intragroup similarity, the points will have small distance to its own centroid. With high intergroup difference, the points should be far apart from other clusters. This metric combines these two together.
 
 In the following notebook, we will apply K-Means Clustering to the coordinate location of roller coasters in the United States to help us plan which cluster of roller coasters we should visit next.
-
-Come up with and try different measures for K.
-- standard deviation, variance
