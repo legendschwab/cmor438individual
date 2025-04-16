@@ -6,6 +6,9 @@ Random forests is as an example of an ensemble method as it combines the predict
 
 *Credits: Plural Sight*
 
-Another ensemble method is called **boosting**. Boosting is a method where weaker models are improved iteratively with a process of re-weighting models.
+Another ensemble method is called **boosting**. Boosting is a sequential method where weaker models are improved iteratively in order to correct the errors of previous iterations. Models are re-weighted so that those with low accuracy are given a higher weight and inputted to the next model. 
+
+One disadvantage of boosting is that it is prone to outliers. Because each model attempts to correct the errors of the previous model, outliers can skew results. 
+
 
 Why do we use ensemble methods? The main reason is to reduce variance in our predictions. Every machine learning model has its own pros and cons and use different strategies to model the relationships within our data. For example, the perceptron classifies by using a linear hyperplane whereas k-Nearest Neighbors is effective on clustered data that are grouped in "ball" shapes. The effectiveness of each model will vary depending on the data we have and the features we use. However, by combining the results of several machine learning models either through averaging for regression or majority vote for classification, results are more consistent and overall accurate. 
