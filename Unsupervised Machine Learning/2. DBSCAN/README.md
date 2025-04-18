@@ -1,4 +1,4 @@
-DBSCAN is a density-based clustering algorithm that groups together points that are closely packed and marks points in low-density regions as outliers (noise). 
+**DBSCAN** is a density-based clustering algorithm that groups together points that are closely packed and marks points in low-density regions as outliers (noise). 
 
 Unlike k-means, DBSCAN does not require the number of clusters to be specified in advance. The algorithm determines that value of $k$.The intuition with DBSCAN is to look at densely packed points and group them together at clusters. Note that while k-means clustering is limited to ball-like shapes,  DBSCAN is flexible enough to extend to other cluster shapes as well.
 
