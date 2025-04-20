@@ -20,4 +20,6 @@ behave extremely similarly. We want to best balance out the extremeties in our d
 Once we've created our samples and chosen features, we create fit a decision tree for each sample as normal. This applies for both classification and regression models.
 Now, when we are given a new data point from our testing data and asked to make a prediction, we apply each data point to each decision tree, using the 
 features selected for each tree to make a prediction. Once we have all the predictions, we take the majority voting or mode as our prediction for classification models.
-For regression models, we take the average output value for each deicions tree to get our overall prediction.
+For regression models, we take the average output value for each decisions tree to get our overall prediction.
+
+In the following data set, we will use Random Forests to predict board games as those that are long (play time less than 60 minutes) and short (play time greater than 60 minutes) based on the features of complexity, rating, minimum age, and 
