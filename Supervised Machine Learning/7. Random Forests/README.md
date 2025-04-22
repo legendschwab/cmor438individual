@@ -22,4 +22,4 @@ Now, when we are given a new data point from our testing data and asked to make 
 features selected for each tree to make a prediction. Once we have all the predictions, we take the majority voting or mode as our prediction for classification models.
 For regression models, we take the average output value for each decisions tree to get our overall prediction.
 
-In the following data set, we will use Random Forests to predict board games as those that are long (play time less than 60 minutes) and short (play time greater than 60 minutes) based on the features of complexity, rating, minimum age, and 
+In the following data set, we will use Random Forests to improve the classification of roller coasters as inverted vs. not-inverted based on speed, G-force, and speed.
