@@ -1,4 +1,4 @@
-**Neural Networks** is a multi-layer representation of the perceptron model. 
+**Neural Networks** is a multi-layer representation of the perceptron model. It is a supervised machine learning that can perform both regression and classification tasks.
 
 ![photo](https://www.qtravel.ai/wp-content/uploads/2023/07/sieci-neuronowe-grafika-1024x759.png)
 
