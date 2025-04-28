@@ -15,9 +15,7 @@ $u \in N(v) : L(u) = l$}.
 
 Ties are broken randomly and we repeat this until convergence (labels no longer changing). In the following notebook, we will implement label propagation to cluster Facebook users based on who they follow. The data set was taken from [Kaggle](https://www.kaggle.com/datasets/wolfram77/graphs-social?resource=download).
 
-This data set is a directed graph meaning that person $A$ can follow person $B$ but not vice versa. For the label propagation algorithm, we will consider neighbors as only out-going neighbors. This makes sense for a social media network since your feed shows the content of the people you follow, so you're likely to join the category of the people you are following.
-
 **Maximum Clique** refers to the problem of finding the largest subset of vertices where all vertices are adjacent to each other. In the context of a social networks, this would be the finding the largest group of people who are all friends with each other. 
 
-We will formulate this as a integer linear program and solve it on the Peterson graph (pictured above).
+We will formulate this as a integer linear program and solve it on the Peterson graph (pictured above) as an example and then the Facebook dataset.
 
