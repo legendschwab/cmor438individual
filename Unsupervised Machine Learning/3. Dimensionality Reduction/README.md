@@ -4,4 +4,8 @@ A term important to principal component analysis is covariance. Covariance measu
 
 The foundation of PCA is the eigenvalue decomposition of the covariance matrix. Intuitively, eigenvalues capture the most essential information of a matrix. So we take top $k$ eigenvalues and corresponding eigenvectors to get the top $k$ combinations of features. This helps reduce dimensionality of data while preserving information. Then, using matrix multiplication, we can project our original data to these eigenvectors to get our new features. 
 
+![pca](https://numxl.com/wp-content/uploads/principal-component-analysis-pca-featured.png)
+
+*Credits: NumXL*
+
 From then, we can rerun algorithms such as clustering and potentially yield better results. In the following notebook, we will consider 6 features of roller coasters and perform dimensionality reduction to see if that can impact clustering.
