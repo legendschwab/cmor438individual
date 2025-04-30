@@ -1,6 +1,6 @@
 Up until now data has been defined in terms of feature vectors in $R^n$. However, many data sets are better described by a relational structure. **Graph Theory** refers to using graph-like structures to better understand the relationship between data points. Examples include social networks and shortest-path problems. 
 
-Formally, a graph is defined as a tuple of 2 sets, vertices $V$ and edges $E$ that connect vertices. Edges connect the vertices either with direction in directed graphs or in both directions in undirected graphs.
+Formally, a graph is defined as a tuple of 2 sets, vertices $V$ and edges $E$ that connect vertices. Edges connect the vertices either with direction in directed graphs or in both directions in undirected graphs. Below is an example of the Peterson graph, which is an undirected graph. It has 10 vertices and 15 edges.
 
 ![graph](https://ds055uzetaobb.cloudfront.net/brioche/uploads/9NiHeGq6rf-2000px-petersen_graph_3-coloringsvg.png?width=1200)
 
