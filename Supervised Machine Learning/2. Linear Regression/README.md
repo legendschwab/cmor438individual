@@ -1,4 +1,4 @@
-**Linear regression** is a machine learning algorithm that attempts to determine a linear relationship between a set of inputs and their corresponding output values. Here is the general model: 
+**Linear regression** is a machine learning algorithm that attempts to determine a linear relationship between a set of inputs and their corresponding output values. It is essentially the perceptron model except without the activation function. Here is the general model: 
 
 $$
 y_i = \beta_{0} + \beta_{1} x_{i1} + \cdots + \beta_{p} x_{ip} + \varepsilon_i
