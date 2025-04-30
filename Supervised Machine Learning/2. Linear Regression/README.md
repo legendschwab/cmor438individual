@@ -9,7 +9,7 @@ where $$x_{i}$$'s are our input feature values and $$y_{i}$$ are the correspondi
 
 Using the training data $$(\overrightarrow{x}_i, y_i)$$ linear regression seeks to estimate the coefficients ($$\beta$$'s) that minimize the least squares error, which is the sum of squared errors between observed data points and the predicted values.
 
-Solving this linear least squares problem, we get $\hat{\beta} = (X^\top X)^{-1} X^\top y$.
+Solving this linear least squares problem, we get $\hat{\beta} = (X^\top X)^{-1} X^\top y$ as our optimal estimate for $$\beta$$.
 
 Note that the term **"linear"** in linear regression refers to the linearity of the coefficients, meaning that input values $$x_{i}$$ can be transformed (e.g., log transformation) while still maintaining the linearity of the model. 
 
