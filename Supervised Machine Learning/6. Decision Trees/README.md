@@ -1,4 +1,4 @@
-**Decision trees** are machine learning algorithms that can perform both classification and regression. They have a tree-like structure with parent and child nodes. At each layer of a decision tree, we split our data into 2 sets.
+**Decision trees** are machine learning algorithms that can perform both classification and regression. They have a tree-like structure with parent and child nodes.
 
 ## Classification
 
