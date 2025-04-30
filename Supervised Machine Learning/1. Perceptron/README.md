@@ -2,6 +2,8 @@ The **perceptron** is the most fundamental supervised machine learning algorithm
 
 ![PerceptronModel](https://anasbrital98.github.io/assets/img/14/Perceptron.png)
 
+*Credits: Anasbrital98 GitHub*
+
 The most common activation function is a simple step function that outputs -1 or 1 based on a threshold. For example, if the weighted sum is less than 0, the step function will return -1 and 1 otherwise.
 
 The training of a perceptron model determines the set of weights that will minimize the cost function. The cost function is the sum of the difference between the predicted value of $\hat{y}_i$ and the actual value $y_i$ squared for all points in our training data set.
