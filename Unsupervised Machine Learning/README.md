@@ -4,4 +4,3 @@ Examples Include:
 1. K-Means Clustering
 2. DBSCAN
 3. Principal Component Analysis
-4. Image Compression with SVD Decomposition
