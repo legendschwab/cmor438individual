@@ -4,11 +4,10 @@ We can do both classification and regression with $$k$$-nearest neighbors. For c
 
 How do you determine an appropriate value of $$k$$? We need to do a process of validation in order to determine this parameter value. We create a separate validation data set from our data and apply it to the kNN model for various values of $$k$$. We select the value of $$k$$ that results in the highest classification accuracy. Besides using validation, another informal rule of thumb is to use an odd $$k$$ value so that there will never be a tie between the top 2 categories. 
 
-What does "closest" mean? This idea of "closest" usually refers to L2 **Euclidean** distance but other forms of distance can be used. We will explore both Euclidean distance and Manhattan distance when applying this algorithm. Manhattan distance may be good when dealing with the curse of dimensionality. The curse of dimensionality refers to challenges of detecting patterns and analyzing relationships in high-dimensional data. When dealing with high-dimensional data, data may be more sparse so Euclidean distance can overexaggerate the distance between points. Thus, Manhattan distance may be more appropriate for kNN. 
+What does "closest" mean? This idea of "closest" usually refers to L2 **Euclidean** distance but other forms of distance can be used. We will explore both Euclidean distance and Manhattan distance when applying this algorithm. 
+
+The **Manhattan distance** between two points is given by: $D(\mathbf{x}, \mathbf{y}) = \sum_{i=1}^{n} |x_i - y_i|$.
+
+Manhattan distance may be good when dealing with the curse of dimensionality. The curse of dimensionality refers to challenges of detecting patterns and analyzing relationships in high-dimensional data. When dealing with high-dimensional data, data may be more sparse so Euclidean distance can overexaggerate the distance between points. Thus, Manhattan distance may be more appropriate for kNN. 
 
 In this following notebook, we will use the speed and height of a roller coaster to predict whether a roller coaster has inversions or not. We will first use L2 Euclidean distance but we will also try Manhattan distance and compare our results. 
-
-
--- Notes from Class:
--- Curse of dimensionality, high dimensional space is essentially empty, each feature vector is mapped to the majority label of the training instances, have to store all of those instances, memory issues
--- Test set should not be used to pick k. Instead, we should create a separate validation set. Test set should never influence any parameters of the model.
