@@ -17,7 +17,7 @@ behave extremely similarly. We want to best balance out the extremeties in our d
 
 ## Aggregation
 
-Once we've created our samples and chosen features, we create fit a decision tree for each sample as normal. This applies for both classification and regression models.
+Once we've created our samples and chosen features, we fit a decision tree for each sample as normal. This applies for both classification and regression models.
 Now, when we are given a new data point from our testing data and asked to make a prediction, we apply each data point to each decision tree, using the 
 features selected for each tree to make a prediction. Once we have all the predictions, we take the majority voting or mode as our prediction for classification models.
 For regression models, we take the average output value for each decisions tree to get our overall prediction.
