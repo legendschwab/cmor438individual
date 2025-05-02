@@ -2,8 +2,6 @@ The **perceptron** is the most fundamental supervised machine learning algorithm
 
 ![PerceptronModel](https://anasbrital98.github.io/assets/img/14/Perceptron.png)
 
-*Credits: Anasbrital98 GitHub*
-
 The most common activation function is a simple step function that outputs -1 or 1 based on a threshold. For example, if the weighted sum is less than 0, the step function will return -1 and 1 otherwise.
 
 The training of a perceptron model determines the set of weights that will minimize the cost function. The cost function is the sum of the difference between the predicted value of $\hat{y}_i$ and the actual value $y_i$ squared for all points in our training data set.
@@ -23,4 +21,4 @@ $$
 The idea here is that if $$\hat{y}_i$$ equals $$y_i$$, then we do not change our weights or bias. If the predicted value is $-1$ while the actual value is $1$, then we update $w \gets w + x_i$, which means that in future iterations, $w \cdot x_i + b$ will be more positive. This increases the chance that the prediction will be corrected to $1$. Similarly, if the predicted value is $1$ while the actual value is $-1$, we update $w \gets w - x_i$. In future iterations, $w \cdot x_i + b$ will be more negative, increasing the chance that the prediction will be $-1$.
 
 
-In the following notebook, we will create a Perceptron class that will perform binary classification of board games into those can be finished in an hour vs. those who cannot based on its average complexity level and rating.
+In the following notebook, we will create a Perceptron class that will perform binary classification of the top 100 board games into those can be finished in an hour vs. those who cannot based on its average complexity level and rating.

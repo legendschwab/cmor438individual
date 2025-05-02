@@ -6,15 +6,15 @@ $$
 f(x\mid \boldsymbol{\beta}) = P(y = 1 \mid \mathbf{x}) = \frac{1}{1 + e^{-\mathbf{x}^\top \boldsymbol{\beta}}}
 $$
 
-We estimate the value of $\boldsymbol{\beta}$ by Maximum Liklihood Estimation.
-
 ![photo](https://images.spiceworks.com/wp-content/uploads/2022/04/11040521/46-4-e1715636469361.png)
 
 *Credits: Spice Works* 
 
+We can estimate the value of $\boldsymbol{\beta}$ by Maximum Liklihood Estimation or Gradient Descent. We will apply Gradient Descent in the following notebook.
+
 Logistic regression can be used for binary classification tasks where the predicted probability represents the probability that an object belongs in one classification over the other. Since logistic regression is based on a linear combination of inputs, it works best for data that is linearly separable.
 
-In the following notebook, we will retry the classification of board games as short games (finish less than 1 hour) and long games (finish in longer than 1 hour) based on complexity and and rating.
+In the following notebook, we will try classifying roller coasters as inverted or non-inverted based on speed, height, and G-Forces. 
 
  
 

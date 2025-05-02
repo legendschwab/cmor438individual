@@ -10,7 +10,4 @@ Another ensemble method is called **boosting**. Boosting is a sequential method 
 
 One disadvantage of boosting is that it is prone to outliers. Because each model attempts to correct the errors of the previous model, outliers can skew results. 
 
-
 Why do we use ensemble methods? The main reason is to reduce variance in our predictions. Every machine learning model has its own pros and cons and use different strategies to model the relationships within our data. For example, the perceptron classifies by using a linear hyperplane whereas k-Nearest Neighbors is effective on clustered data that are grouped in "ball" shapes. The effectiveness of each model will vary depending on the data we have and the features we use. However, by combining the results of several machine learning models either through averaging for regression or majority vote for classification, results are more consistent and overall accurate. 
-
-In the following data set, we will apply bagging for classifying roller coasters as inverted vs. non-inverted by combining the results of Logistic Regression, K-Nearest Neighbors, and Decision Trees.
