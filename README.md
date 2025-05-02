@@ -1,4 +1,4 @@
-# CMOR 438 Data Science and Machine Learning Individual Repository
+# Machine Learning of Roller Coasters and Board Games
 
 In this repository, we will cover major data science/machine learning algorithms and implement them on data sets. 
 
@@ -7,3 +7,4 @@ I'm a huge roller coaster enthusiast so I wanted to apply these machine learning
 For all the following notebooks, you can reproduce results by downloading the included data sets and running the cells from top to bottom. 
 
 Author: Jonathan Cheng (jc212@rice.edu)
+CMOR 438: Data Science and Machine Learning
