@@ -7,4 +7,5 @@ I'm a huge roller coaster enthusiast so I wanted to apply these machine learning
 For all the following notebooks, you can reproduce results by downloading the included data sets and running the cells from top to bottom. 
 
 Author: Jonathan Cheng (jc212@rice.edu)
+
 CMOR 438: Data Science and Machine Learning
